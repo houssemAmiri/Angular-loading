@@ -7,4 +7,12 @@
 <app-child-two />
 <router-outlet />
 
-<app-loading-indicator [detectRouteTransitions]="true" />
+<app-loading-indicator [detectRouteTransitions]="true">
+  <ng-template #loading>
+    <div class="custom-spinner">
+      <h1>custom-spinner</h1>
+    </div>
+  </ng-template>
+</app-loading-indicator>
+
+<!-- <app-loading-indicator [detectRouteTransitions]="true" /> -->
